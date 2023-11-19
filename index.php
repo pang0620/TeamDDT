@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+include_once("connect.php");
+$sql = "SELECT * FROM db_table";
+$result = $conn->query($sql);
+
+echo "asdf";
+
+
+?>
+
 <html lang="ko">
     <head>
 	<meta charset="utf-8">
@@ -102,7 +111,7 @@
                 </div>
                 <div id='left'>
                     <div id="left1" class="in">
-                        온도
+		    온도 <?php echo $row['id']?>
                     </div>
                     <div id="left2" class="in">
                         습도
@@ -113,7 +122,7 @@
                         미세먼지
                     </div>
                     <div id="center2" class="in">
-                        기상청 ?
+                        기상청
                     </div>
                 </div>
                 <div id="right">
@@ -130,10 +139,6 @@
                         OPEN
                     </button>
                 </div>
-		<div>
-			<form action="select.php" method="post">
-				<input type="submit" value="view">
-			</form>
             </div>
         </section>
     </body>

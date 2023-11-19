@@ -6,5 +6,5 @@ $dbname = "db";
 
 $conn = new mysqli($server, $user, $password, $dbname);
 
-if ($conn->connect_error) echo "<h2>접속 실패</h2>";
-else echo "<h2>접속 성공</h2>";
+//if ($conn->connect_error) echo "<h2>접속 실패</h2>";
+//else echo "<h2>접속 성공</h2>";
