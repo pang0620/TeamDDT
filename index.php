@@ -1,11 +1,5 @@
 <?php
-include_once("connect.php");
-$sql = "SELECT * FROM db_table";
-$result = $conn->query($sql);
-
-echo "asdf";
-
-
+require_once("select.php");
 ?>
 
 <html lang="ko">
@@ -111,15 +105,15 @@ echo "asdf";
                 </div>
                 <div id='left'>
                     <div id="left1" class="in">
-		    온도 <?php echo $row['id']?>
+		        온도 <?php echo $temp ?>
                     </div>
                     <div id="left2" class="in">
-                        습도
+                        습도 <?php echo $humid ?>
                     </div>
                 </div>
                 <div id="center">
                     <div id="center1" class="in">
-                        미세먼지
+                        미세먼지 <?php echo $dust ?>
                     </div>
                     <div id="center2" class="in">
                         기상청
@@ -127,10 +121,10 @@ echo "asdf";
                 </div>
                 <div id="right">
                     <div id="right1" class="in">
-                        1시간 강수량
+                        1시간 강수량 <?php echo $prec ?>
                     </div>
                     <div id="right2" class="in">
-                        강수확률
+                        강수확률 <?php echo $prob ?>
                     </div>
                 </div>
                 <div id="window">

@@ -8,14 +8,13 @@ $result = $conn->query($sql);
 
 if(isset($result) && $result->num_rows>0) {
 	while($row = $result->fetch_assoc()) {
-		echo "id: ".$row['id']." ";
-		echo "temp: ".$row['db_temp']." ";
-		echo "humid: ".$row['db_humid']." ";
-		echo "prob: ".$row['db_prec']." ";
-		echo "prec: ".$row['db_prec']." ";
-		echo "dust: ".$row['db_dust']." ";
-		echo "date: ".$row['date']."<hr>";
+		$id = $row['id'];
+		$temp = $row['db_temp'];
+		$humid = $row['db_humid'];
+		$prob = $row['db_prob'];
+		$prec = $row['db_prec'];
+		$dust = $row['db_dust'];
+		$date = $row['date'];
 	}
 } else echo "no results found>";
-
 ?>
