@@ -113,7 +113,13 @@ require_once("select.php");
                 </div>
                 <div id="center">
                     <div id="center1" class="in">
-                        미세먼지 <?php echo $dust ?>
+		    미세먼지
+<?php 
+	if((double)$dust>17) { 
+		echo "<strong style='color: red;'>$dust</strong>"; 
+	} else {
+		echo $dust;
+}?>
                     </div>
                     <div id="center2" class="in">
                         기상청

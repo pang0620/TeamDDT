@@ -34,8 +34,8 @@ params ={'serviceKey' : keys,
          'dataType' : 'XML', 
          'base_date' : get_current_date_string(), 
          'base_time' : get_current_hour_string(), 
-         'nx' : '73', 
-         'ny' : '134' }
+         'nx' : '60', 
+         'ny' : '127' }
 
 # 값 요청 (웹 브라우저 서버에서 요청 - url주소와 파라미터)
 res = requests.get(url, params = params)

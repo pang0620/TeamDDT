@@ -13,8 +13,23 @@ if(isset($result) && $result->num_rows>0) {
 		$humid = $row['db_humid'];
 		$prob = $row['db_prob'];
 		$prec = $row['db_prec'];
-		$dust = $row['db_dust'];
+		//$dust = $row['db_dust'];
 		$date = $row['date'];
+	}
+} else echo "no results found>";
+?>
+
+<?php
+
+include_once("connect.php");
+
+$sql = "SELECT * FROM pm_data";
+
+$result = $conn->query($sql);
+
+if(isset($result) && $result->num_rows>0) {
+	while($row = $result->fetch_assoc()) {
+		$dust = $row['pm'];
 	}
 } else echo "no results found>";
 ?>
