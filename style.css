@@ -37,16 +37,29 @@ a:hover{
 	top: 50%;
 	margin-top: -550px;
 	width:1500px;
-	height: 950px;
+	height:900px;
 	background-color: rgb(221, 239, 255);
 	font-size: 50px;
 }
 
 .in{
+	position:relative;
 	padding: 50px 0px 0px 0px;
 	border-radius: 25px;
 }
 
+.sub {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	color: rgba(0,0,0,0.05);
+	font-size: 300%;
+	text-align: center;
+}
 #up{
 	margin: 0px 0px 10px 0px;
 }
@@ -68,20 +81,20 @@ a:hover{
 #down1{
 	display: inline-block;
 	width: 450px;
-	height: 300px;
+	height: 350px;
 	background-color: rgb(44, 150, 114);
 }
 
 #down2{
 	display: inline-block;
 	width: 400px;
-	height: 300px;
+	height: 350px;
 	background-color: rgb(110, 188, 162);
 }
 
 #down3{
 	display: inline-block;
 	width: 535px;
-	height: 300px;
+	height: 350px;
 	background-color: rgb(167, 255, 167);
 }
