@@ -1,0 +1,87 @@
+@import "font_ROCAF.css";
+*{
+	font-family: 'ROKAF', serif;
+}
+
+body{
+	background-color: rgb(157, 204, 244);
+	color: white;
+}
+
+section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div {
+	text-align: center;
+}
+
+a{
+	text-decoration-line: none;
+	color: white;
+}
+
+a:hover{
+	color: rgb(255, 255, 125);
+}
+
+#title{
+	margin: 0 auto;
+	padding: 20px 0px 20px 0px;
+}
+
+#all{
+	position: absolute;
+	top: 50%;
+	margin-top: -550px;
+	width:1500px;
+	height: 950px;
+	background-color: rgb(221, 239, 255);
+	font-size: 50px;
+}
+
+.in{
+	padding: 50px 0px 0px 0px;
+	border-radius: 25px;
+}
+
+#up{
+	margin: 0px 0px 10px 0px;
+}
+
+#up1{
+	display: inline-block;
+	width: 700px;
+	height: 350px;
+	background-color: rgb(137, 212, 136);
+}
+
+#up2{
+	display: inline-block;
+	width: 700px;
+	height: 350px;               
+	background-color: rgb(116, 226, 190);
+}
+
+#down1{
+	display: inline-block;
+	width: 450px;
+	height: 300px;
+	background-color: rgb(44, 150, 114);
+}
+
+#down2{
+	display: inline-block;
+	width: 400px;
+	height: 300px;
+	background-color: rgb(110, 188, 162);
+}
+
+#down3{
+	display: inline-block;
+	width: 535px;
+	height: 300px;
+	background-color: rgb(167, 255, 167);
+}
